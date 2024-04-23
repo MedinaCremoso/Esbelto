@@ -1,0 +1,15 @@
+const Fatorial = 345;
+let i = 0;
+let Resultado = 0;
+
+Resultado = Fatorial;
+console.log(Resultado + "!")
+for(i = 0; i < Fatorial; i++ ) {
+
+Resultado = Resultado * (Fatorial - i);
+
+    console.log(Resultado + " = (" +Resultado+" * ( "+ Fatorial+ " - " + i + ")");
+
+    Resultado = Resultado * (Fatorial -i);
+
+}
