@@ -1,19 +1,24 @@
 import random
-continuar  = "S"
+continuar = "S"
+Perro = 0
+Pacerto = 0
 
 while continuar.upper() == "S" :
     ns = random.randint(1,10)
-
     T = 3
+    while(T > 0):
+        print("você tem", T, "Tentativa(s)")
+        T = T - 1
+        nc = int(input("digite um número entre 1 e 10: "))
 
-    while( t > 0):
-        print(" voce tem" , t, "tentativa")
-        T = T -1
-
-        nc = int(input ("Digite um Número de 1 a 10: "))
         if (ns == nc):
-            print("você acertou.")
+            print("você acertou!")
+            T = 0
+            Pacerto = Pacerto + 1
         else:
             print("você errou.")
-
-continuar = input("deseja continuar (S)im")
+            Perro = Perro + 1
+    print("Número de acerto", Pacerto)
+    print("Número de Erros", Perro)
+    
+    continuar = input("deseja continuar? (S)im")
