@@ -1,7 +1,26 @@
+def forca(tentativa):
+    f1 = " +-------- +  "
+    f2 = " |         |  "
+    f3 = " |         o  "
+    f4 = " |        /|\ "
+    f5 = " |         |  "
+    f6 = " |        / \ "
+    f7 = " |____________"
+
+    if tentativa>= 1:
+        f2 = "   |     | "
+    
+    if tentativa>= 2:
+        f3="     |      o "
+    if tentativa>= 3:
+
+
+
+
 def continua():
     while True:
         print("-" * 20)
-        novamente = input("Quer jogar de novo S/N? ").upper()
+        novamente = input("Quer jogar de novo SIM OU NÃO? ").upper()
         if novamente == "S":
             acabou = True
             break
@@ -17,4 +36,15 @@ while jogar :
     jogar = continua()
 
 
-(2° trimestre)
+▒▒▒▒▒▄██████████▄▒▒▒▒▒ 
+▒▒▒▄██████████████▄▒▒▒ 
+▒▒██████████████████▒▒ 
+▒▐███▀▀▀▀▀██▀▀▀▀▀███▌▒ 
+▒███▒▒▌■▐▒▒▒▒▌■▐▒▒███▒ 
+▒▐██▄▒▀▀▀▒▒▒▒▀▀▀▒▄██▌▒ 
+▒▒▀████▒▄▄▒▒▄▄▒████▀▒▒ 
+▒▒▐███▒▒▒▀▒▒▀▒▒▒███▌▒▒ 
+▒▒███▒▒▒▒▒▒▒▒▒▒▒▒███▒▒ 
+▒▒▒██▒▒▀▀▀▀▀▀▀▀▒▒██▒▒▒ 
+▒▒▒▐██▄▒▒▒▒▒▒▒▒▄██▌▒▒▒ 
+▒▒▒▒▀████████████▀▒▒▒▒
